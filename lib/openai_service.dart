@@ -1,10 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class OPenAIService{
 final List<Map<String,String>> messages = [];
-final openAIKey = dotenv.env['openAIKey'];
+final openAIKey =  "sk-proj-ZuRfu5HdA8QvJWStigCYT3BlbkFJJqGBBv6YF5iNnMGmK5LF";
   //checks if the request if for image generation by Dall-E or for ChatGPT
   Future<String> isArtPromptAPI(String prompt) async{
     try{
